@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	background-color: #f2f2f2;
+}
+
+header {
+	width: 100%;
+	background-color: #77cdb4;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFF;
+	font-size: 2.3em;
+}
+
+em {
+	color: #232027;
+}
+
+.wrapper {
+	width: 40%;
+	margin: 40px auto;
+}
+
+div.gallery {
+	margin-top: 30px;
+}
+
+div.gallery ul {
+	list-style-type: none;
+	margin-left: 35px;
+}
+
+/* animation */
+div.gallery ul li, div.gallery li img {
+	-webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
+}
+
+div.gallery ul li {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 130px;
+	margin: 5px;
+	padding: 5px;
+	z-index: 0;
+}
+
+/* Make sure z-index is higher on hover */
+/* Ensure that hover image overlapped the others */
+div.gallery ul li:hover {
+	z-index: 5;
+}
+
+/* Image is position nicely under li */
+div.gallery ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #dddddd;
+	padding: 5px;
+	width: 130px;
+	height: 130px;
+	background: #f0f0f0;
+}
+
+div.gallery ul li img:hover {
+	width: 200px;
+	height: 200px;
+	margin-top: -130px;
+	margin-left: -130px;
+	top: 65%;
+	left: 65%;
+}
+
+p.attribution {
+	font-family: 'Consolas';
+	color: #000;
+	clear: both;
+	text-align: center;
+	line-height: 25px;
+	padding-top: 30px;
+}
+
+p.attribution a {
+	color: #4c8d7c;
+}
+
+/* Responsive hack */
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+	.wrapper {
+		width: 500px;
+	}
+}
+
+@media only screen and (max-width: 498px) {
+	.wrapper {
+		width: 300px;
+	}
+
+	div.gallery ul {
+		list-style-type: none;
+		margin: 0;
+	}
+}
+    </style> 
+</head>    
+<body>
+    <div class="container">
+        <div style="background-color: coral;">
+            <p style="text-align: center; font-size: 3rem; font-family:  Verdana">EMPLOYEE MANAGEMENT SYSTEM</p>
+            <p style="text-align: center; font-size: 2rem; font-family:  Verdana; color: #fff;">Welcome to EMP system</p>
+        </div>
+		<div class="card"><h3 align="center"><a href="/ems/login">Login Here</a></h3></div>
+        <div style="background-color: bisque;">
+            <div><h3 align="center">Our Employees</h3></div>
+            <div class="wrapper">
+                <div class="gallery">
+                    <ul>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/9.png"></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/2.png"></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/3.png"></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/1.png"></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/4.png"></li>
+                        <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/5.png"></li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </div>        
+</body>
+</html>
